@@ -48,6 +48,29 @@ const VisionMission = () => {
                                     chuyện và sứ mệnh của chúng tôi là giúp cho
                                     khách hàng/ đối tác và mỗi người tiêu dùng
                                     viết nên câu chuyện đẹp nhất của chính họ.
+
+                                </p>
+                            </div>
+                            <br />
+                            <h3>Quyền lợi khách hàng</h3>
+                            <div className="description">
+                                <p>
+                                    Khi hợp tác với công ty mỹ phẩm Harold, các
+                                    đối tác sẽ nhận được nhiều quyền lợi thiết
+                                    thực và giá trị: sản phẩm chất lượng với
+                                    công thức độc quyền, thành phần nguyên liệu
+                                    cao cấp. Đặc biệt, Harold cam kết thiết kế
+                                    bao bì và logo chuyên nghiệp, giúp sản phẩm
+                                    của đối tác nổi bật và thu hút khách hàng.
+                                    Ngoài ra, công ty còn hỗ trợ xây dựng thương
+                                    hiệu mạnh mẽ, giúp các đối tác khẳng định vị
+                                    thế trên thị trường. Bên cạnh đó, Harold
+                                    cung cấp đầy đủ giấy tờ kiểm định chất
+                                    lượng, đảm bảo sản phẩm đáp ứng tiêu chuẩn
+                                    cao nhất, từ đó tạo niềm tin cho khách hàng.
+                                    Sự đồng hành này không chỉ mang lại lợi
+                                    nhuận kinh doanh mà còn góp phần xây dựng
+                                    hình ảnh thương hiệu vững mạnh và bền bỉ.
                                 </p>
                             </div>
                         </div>
