@@ -44,9 +44,12 @@
         h1 {
             font-size: 60px;
             color: var(--primary-color);
-
+            font-family: 'Playwrite AU TAS', cursive !important;
             line-height: 70px;
             margin: 20px 0;
+            span {
+                font-family: 'Playwrite AU TAS', cursive !important;
+            }
         }
 
         p {

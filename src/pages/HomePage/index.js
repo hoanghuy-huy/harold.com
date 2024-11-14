@@ -5,7 +5,7 @@ import ScrollToTop from '~/components/ScrollToTop';
 import VisionMission from '~/components/VisionMission';
 
 const HomePage = () => {
-    ScrollToTop()
+    ScrollToTop();
     return (
         <>
             <Header />
