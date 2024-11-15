@@ -86,7 +86,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <strong>Email:</strong>{' '}
-                            <a href="mailto:haroldgroup.co@gmail.com">haroldgroup.co@gmail.com</a>
+                            haroldgroupcos@gmail.com
                         </li>
                     </ul>
                 </div>
