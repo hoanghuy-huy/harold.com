@@ -12,7 +12,14 @@ const DetailProductPage = () => {
         return product.id === +productId;
     });
     console.log(images.moisturizerSerum);
+
+    
     ScrollToTop();
+
+    if(!product) {
+        return <h1 className='not-found'>404 not found</h1>
+    }
+
     return (
         <div className="detail-product-page section">
             <div class="container">
