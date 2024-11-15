@@ -3,30 +3,29 @@
         {
             "id": 1,
             "title": "Toner",
-            "desc": "Toner, also known as a skin toner or a balancing water, is a product used after cleansing to tone the skin, penetrate the pores, remove dirt, bacteria, and excess oil that cleansers and face washes can't always get rid of. Skipping the toner step can leave some dirt behind, leading to clogged pores. There are various types of toners such as moisturizing toners, exfoliating toners, and treatment toners.",
+            "desc": "Toner hay còn gọi là dung dịch làm săn da hoặc nước cân bằng. Đây là sản phẩm dùng sau bước rửa mặt để toner len lỏi vào trong lỗ chân lông, lấy sạch bụi bẩn, vi khuẩn, dầu thừa mà nước tẩy trang và sữa rửa mặt không thể rửa sạch. Nếu bỏ qua bước sử dụng toner, một phần bụi bẩn đọng lại gây bít tắc lỗ chân lông.Có rất nhiều loại Toner như: Toner dưỡng ẩm, Toner tẩy tế bào chết, Toner điều trị…",
             "path": "toner",
             "image": "/static/media/toner.db92c044d34cb70c30f6.png"
         },
         {
             "id": 2,
-            "title": "Moisturizing Serum",
-            "desc": "Enhances skin's resistance against external aging factors, improves skin elasticity and firmness. ",
-            "desc1": "Helps rejuvenate the skin, providing a smooth, bright and radiant complexion.",
-            "desc2": "Provides moisture to the skin, brightens and smoothes the skin, evens out the skin tone.Balancing Skin Toner\nBalances the skin, regulates excess oil, and helps improve the appearance of pores effectively, providing optimal moisturizing effects for oily skin, giving a gentle, comfortable feeling without being greasy.",
+            "title": "Serum Dưỡng Ẩm",
+            "desc": "* Tăng cường sức đề kháng cho da khỏi các tác nhân lão hóa bên ngoài, nâng cao khả năng đàn hồi và săn chắc da",
+            "desc1": "* Cung cấp độ ẩm cho da, làm sáng mịn da, làm đều màu da Toner cân bằng da Giúp cân bằng da, điều tiết dầu thừa và hỗ trợ cải thiện lỗ chân lông một cách hiệu quả, cho hiệu quả dưỡng ẩm tối ưu cho làn da dầu, mang lại cảm giác dịu nhẹ, dễ chịu và không bị nhờn dính.",
             "path": "moisturizing-serum",
             "image": "/static/media/moisturizer-serum-2.6c6c2936c3b0a64ca9cd.png"
         },
         {
             "id": 3,
             "title": "Body Lotion",
-            "desc": "Body lotion helps provide essential nutrients to the skin, such as vitamin C, vitamin E, niacinamide, collagen... These nutrients penetrate deep into the skin, improving skin elasticity and firmness, brightening the skin, preventing free radicals and signs of aging. Additionally, lotion helps balance the skin's moisture, thereby helping to address issues such as acne caused by excessively dry or oily skin. When the skin is adequately moisturized, it becomes soft, smooth, and elastic.",
+            "desc":"Body Lotion giúp cung cấp các dưỡng chất cần thiết cho da, như vitamin C, vitamin E, niacinamide, collagen… Các dưỡng chất này có khả năng thấm sâu vào bên trong da, cải thiện độ đàn hồi và săn chắc da, làm sáng da, ngăn ngừa các gốc tự do và các dấu hiệu lão hóa. Ngoài ra Lotion còn giúp cân bằng độ ẩm cho da, từ đó giúp hạn chế các vấn đề như mụn xuất hiện do da quá khô hoặc quá nhờn. Khi da được cấp ẩm đủ, nó sẽ trở nên mềm mại, mịn màng và đàn hồi.",
             "path": "body-lotion",
             "image": "/static/media/body-lotion.30b6a0dc0ae1c9e58a6f.png"
         },
         {
             "id": 4,
             "title": "Moisturizer Serum",
-            "desc": "Moisturizer provides direct moisture to the skin, while also locking in this moisture on the skin's surface. Through this action, moisturizer effectively moisturizes, prevents dry, rough skin and excessive sebum production.",
+            "desc": "Moisturizer dưỡng ẩm cho da Moisturizer sẽ cấp ẩm trực tiếp cho da, đồng thời khóa giữ độ ẩm này trên bề mặt da. Thông qua hoạt động này, moisturizer phát huy tác dụng dưỡng ẩm hiệu quả, ngăn ngừa tình trạng da bị khô ráp, sần sùi và tiết dầu nhờn quá mức.",
             "path": "body-lotion",
             "image": "/static/media/moisturizer-serum.5e36197efe27bdd0aaa1.png"
         }
