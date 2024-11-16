@@ -17,6 +17,12 @@ jobs:
         port: 22
         script: |
           cd /home/harold.com
+          sudo apt update
+          sudo apt upgrade
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+          source ~/.bashrc
+          nvm install 14
+          nvm use 14
           git fetch origin
           git checkout production
           git pull
