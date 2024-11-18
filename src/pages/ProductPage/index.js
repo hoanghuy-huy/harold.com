@@ -6,6 +6,7 @@ import images from '~/assets/images';
 import { Link } from 'react-router-dom';
 const ProductPage = () => {
     ScrollToTop();
+    console.log(images.matNaCuu)
     return (
         <div className="product-page section">
             <div className="container">
@@ -46,6 +47,14 @@ Toner cân bằng da
 Moisturizer sẽ cấp ẩm trực tiếp cho da, đồng thời khóa giữ độ ẩm này trên bề mặt da. Thông qua hoạt động này, moisturizer phát huy tác dụng dưỡng ẩm hiệu quả, ngăn ngừa tình trạng da bị khô ráp, sần sùi và tiết dầu nhờn quá mức."
                             path={'4'}
                         />
+                               <CardProduct
+                            src={images.matNaCuu}
+                            title="MẶT NẠ TẾ BÀO GỐC NHAU THAI CỪU - 3 LỚP"
+                            desc="Mặt nạ tế bào gốc nhau thai cừu – 3 lớp (cấp 1) chứa nhiều thành phần quý giá, nổi bật nhất là yếu tố tăng trưởng biểu bì (EGFs). Chất này có tác dụng kích thích sự tăng trưởng và tái tạo tế bào biểu bì, giúp làm mới làn da và cải thiện cấu trúc da. Ngoài EGFs, mặt nạ còn chứa protein, vitamin E, A, C, các vitamin nhóm B, Collagen và khoáng chất thiết yếu giúp cung cấp độ ẩm và nuôi dưỡng làn da từ sâu bên trong.
+"
+                            path={'5'}
+                        />
+
                     </div>
                 </div>
             </div>

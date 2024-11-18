@@ -15,7 +15,7 @@ const Nav = () => {
         <div className="nav-wrapper">
             <div className="logo">
                 <NavLink to="/">
-                    <img style={{ height: 60, width: 90 }} src={images.logo} />
+                    <img style={{ height: 130, width: 90 }} src={images.logo} />
                 </NavLink>
             </div>
             <ul ref={menu}>

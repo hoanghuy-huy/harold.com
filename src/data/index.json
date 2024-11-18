@@ -28,6 +28,14 @@
             "desc": "Moisturizer dưỡng ẩm cho da Moisturizer sẽ cấp ẩm trực tiếp cho da, đồng thời khóa giữ độ ẩm này trên bề mặt da. Thông qua hoạt động này, moisturizer phát huy tác dụng dưỡng ẩm hiệu quả, ngăn ngừa tình trạng da bị khô ráp, sần sùi và tiết dầu nhờn quá mức.",
             "path": "body-lotion",
             "image": "/static/media/moisturizer-serum.5e36197efe27bdd0aaa1.png"
+        },
+        {
+            "id": 5,
+            "title": "MẶT NẠ TẾ BÀO GỐC NHAU THAI CỪU – 3 LỚP",
+            "desc": "Mặt nạ tế bào gốc nhau thai cừu – 3 lớp (cấp 1) chứa nhiều thành phần quý giá, nổi bật nhất là yếu tố tăng trưởng biểu bì (EGFs). Chất này có tác dụng kích thích sự tăng trưởng và tái tạo tế bào biểu bì, giúp làm mới làn da và cải thiện cấu trúc da. Ngoài EGFs, mặt nạ còn chứa protein, vitamin E, A, C, các vitamin nhóm B, Collagen và khoáng chất thiết yếu giúp cung cấp độ ẩm và nuôi dưỡng làn da từ sâu bên trong.",
+            "desc1": "Sản phẩm không chỉ giúp làm mờ nếp nhăn, tăng cường độ đàn hồi mà còn làm sáng da, duy trì một làn da khỏe mạnh và rạng rỡ. Sự kết hợp hoàn hảo này giúp phục hồi da tổn thương và mang lại hiệu quả dài lâu cho người sử dụng.",
+            "path": "body-lotion",
+            "image": "/static/media/mat-na-cuu-3-lop.4c6f199af4045f329098.jpg   "
         }
     ]
 }
