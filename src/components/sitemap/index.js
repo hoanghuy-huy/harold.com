@@ -5,7 +5,7 @@ const sitemap = () => {
     <Sitemap>
       <url>
         <loc>https://harold.com.vn//</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2024-01-02</lastmod>
       </url>
     </Sitemap>
   );
