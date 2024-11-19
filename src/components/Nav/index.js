@@ -15,7 +15,7 @@ const Nav = () => {
         <div className="nav-wrapper">
             <div className="logo">
                 <NavLink to="/">
-                    <img style={{ height: 130, width: 90 }} src={images.logo} />
+                    <img src={images.logo} />
                 </NavLink>
             </div>
             <ul ref={menu}>
@@ -28,7 +28,7 @@ const Nav = () => {
             </ul>
 
             <div className="action">
-                <div className="btn" onClick={menuHandler}>
+                <div className="btn" onClick={() => menuHandler()}>
                     {/* <ReorderIcon /> */}
                     <span class="line"></span>
                     <span class="line"></span>
