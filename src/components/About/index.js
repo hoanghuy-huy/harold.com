@@ -1,9 +1,7 @@
 import React from 'react';
 import './About.scss';
 import images from '~/assets/images';
-import { faCalendarDays } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
 
 const About = () => {
     return (

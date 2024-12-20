@@ -25,6 +25,9 @@ const Nav = () => {
                 <li>
                     <NavLink to="/product">Sản phẩm</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/brand-story">Về Harold</NavLink>
+                </li>
             </ul>
 
             <div className="action">

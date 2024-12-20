@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '~/assets/images';
-
 const CardProduct = ({ src, title, desc, path }) => {
     return (
         <Link to={'/product/' + path}>

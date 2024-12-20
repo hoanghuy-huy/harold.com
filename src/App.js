@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import DetailProductPage from './pages/DetailProductPage';
+import CompanyIntroductionPage from './pages/CompanyIntroductionPage';
 
 const App = () => {
     return (
@@ -25,6 +26,11 @@ const App = () => {
                             exact={true}
                             path={'/product/:productId'}
                             element={<DetailProductPage />}
+                        />
+                        <Route
+                            exact={true}
+                            path={'/brand-story'}
+                            element={<CompanyIntroductionPage />}
                         />
                     </Routes>
                 </div>
