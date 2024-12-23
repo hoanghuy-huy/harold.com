@@ -1,7 +1,7 @@
 .ProductIntroductionSection {
     width: 100%;
-    display: flex; // Sử dụng flexbox để sắp xếp hai phần
-    flex-direction: row; // Sắp xếp theo hàng
+    display: flex;
+    flex-direction: row;
     position: relative;
     .content-left,
     .content-right {
@@ -52,5 +52,67 @@
         background-color: #cecece;
         position: absolute;
         bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ProductIntroductionSection {
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-wrapper {
+        flex-direction: column !important;
+        .about-img {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100% !important;
+        }
+        .about-content {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ProductIntroductionSection {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        .content-left,
+        .content-right {
+            width: 100%;
+        }
+
+        .content-left {
+            .image-container {
+                height: 600px !important;
+                width: 100%;
+                user-select: none;
+
+                img {
+                    height: 100% !important;
+                    width: auto !important;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .content-right {
+            margin-top: -80px;
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                h3 {
+                    font-size: 18px;
+                }
+            }
+            .content {
+               font-size: 12px !important;
+            }
+        }
     }
 }

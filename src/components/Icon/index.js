@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Icon.scss';
 export const LogoSVGIcon = () => {
     return (
         <svg
@@ -23,6 +23,25 @@ export const LogoSVGIcon = () => {
                 fill="#6691FF"
                 style={{ fill: 'rgb(131, 166, 255)' }}
             />
+        </svg>
+    );
+};
+
+
+export const DotSVG = ({ isActive }) => {
+    return (
+        <svg className="fp-arc-loader" width="16" height="16" viewBox="0 0 16 16">
+            <circle
+                className={`path on ${isActive ? 'active' : ''}`}
+                cx="8"
+                cy="8"
+                r="7" 
+                fill="none"
+                stroke={isActive ? "#ccc" : "none"} 
+                stroke-opacity="1"
+                stroke-width="1" 
+            ></circle>
+            <circle className="path2" cx="8" cy="8" r="1.78" fill="#444"></circle>
         </svg>
     );
 };

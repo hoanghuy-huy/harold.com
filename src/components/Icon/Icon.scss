@@ -1,0 +1,9 @@
+.fp-arc-loader .path {
+    stroke: none; /* Ẩn viền mặc định */
+    transition: stroke 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+.fp-arc-loader .active {
+    stroke: #ccc; /* Đặt màu viền khi active */
+    stroke-width: 1px; /* Kích thước viền */
+}

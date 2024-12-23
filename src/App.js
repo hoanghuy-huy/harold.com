@@ -22,7 +22,7 @@ const App = () => {
                             path={'/product'}
                             element={<ProductPage />}
                         />
-                         <Route
+                        <Route
                             exact={true}
                             path={'/product/:productId'}
                             element={<DetailProductPage />}
@@ -33,6 +33,23 @@ const App = () => {
                             element={<CompanyIntroductionPage />}
                         />
                     </Routes>
+                    <div className="contact-fixed">
+                        <ul>
+                            <li>
+                                <img
+                                    src="https://unila.com.vn/wp-content/uploads/2024/06/mess.png"
+                                    alt=""
+                                />
+                            </li>
+
+                            <li>
+                                <img
+                                    src="https://unila.com.vn/wp-content/uploads/2024/06/mess.png"
+                                    alt=""
+                                />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </Router>
 

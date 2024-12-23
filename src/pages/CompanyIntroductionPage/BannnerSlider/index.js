@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import './BannerSlider.scss';
 const BannerSlider = () => {
     const contents = [
         {
@@ -11,17 +11,17 @@ const BannerSlider = () => {
             image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
         },
         {
-            title: 'GIẢI PHÁP ĐỘC BẢN',
-            subtitle: 'PRODUCT INSIGHT',
+            title: 'GIẢI PHÁP MỚI',
+            subtitle: 'NEW SOLUTION',
             description:
-                'Là quá trình nghiên cứu tạo ra sản phẩm mang tính chiến lược độc bản, giúp khách hàng có tầm nhìn sâu sắc về sản phẩm.',
+                'Giải pháp mới giúp cải thiện quy trình làm việc và tăng hiệu quả sản xuất.',
             image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
         },
         {
-            title: 'GIẢI PHÁP ĐỘC BẢN',
-            subtitle: 'PRODUCT INSIGHT',
+            title: 'CÔNG NGHỆ TIÊN TIẾN',
+            subtitle: 'ADVANCED TECHNOLOGY',
             description:
-                'Là quá trình nghiên cứu tạo ra sản phẩm mang tính chiến lược độc bản, giúp khách hàng có tầm nhìn sâu sắc về sản phẩm.',
+                'Ứng dụng công nghệ tiên tiến trong sản xuất, mang lại sản phẩm chất lượng cao.',
             image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
         },
     ];
@@ -38,10 +38,24 @@ const BannerSlider = () => {
                 );
                 setIsAnimating(true);
             }, 800);
-        }, 5000);
+        }, 9000);
 
         return () => clearInterval(interval);
     }, []);
+
+    const handleDotClick = (index) => {
+        setIsAnimating(false);
+        setTimeout(() => {
+            setCurrentIndex(index);
+            setIsAnimating(true);
+            // Thêm class slide-up cho các phần tử
+            const splitParents = document.querySelectorAll('.split-parent');
+            splitParents.forEach((el, idx) => {
+                el.classList.add('slide-up');
+                setTimeout(() => el.classList.remove('slide-up'), 1000);
+            });
+        }, 800);
+    };
 
     const titleVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -77,7 +91,9 @@ const BannerSlider = () => {
                 <div className="caption container">
                     <div className="content">
                         <motion.div
-                            className="banner-title"
+                            className={`banner-title ${
+                                isAnimating ? 'slide-up' : ''
+                            }`}
                             initial="hidden"
                             animate={isAnimating ? 'visible' : 'hidden'}
                             variants={titleVariants}
@@ -97,11 +113,22 @@ const BannerSlider = () => {
                             animate={isAnimating ? 'visible' : 'hidden'}
                             variants={titleVariants}
                             transition={{ duration: 0.8, delay: 0.5 }}
-                            key={`${currentIndex}-desc`} // Thay đổi key cho phần mô tả
+                            key={`${currentIndex}-desc`}
                         >
                             <p>{currentContent.description}</p>
                         </motion.div>
                     </div>
+                </div>
+                <div className="dots">
+                    {contents.map((_, index) => (
+                        <span
+                            key={index}
+                            className={`dot ${
+                                index === currentIndex ? 'active' : ''
+                            }`}
+                            onClick={() => handleDotClick(index)}
+                        ></span>
+                    ))}
                 </div>
             </div>
         </section>

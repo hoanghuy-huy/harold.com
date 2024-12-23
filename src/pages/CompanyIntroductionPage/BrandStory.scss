@@ -1,3 +1,22 @@
+@keyframes slideUp {
+    0% {
+        opacity: 1;
+        transform: translateY(100%);
+        -moz-transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -moz-transform: translateY(0%);
+    }
+}
+$bg-opacity: 1; // Độ mờ nền
+$dot-width: 50px; // Chiều rộng dấu chấm
+$dot-height: 4px; // Chiều cao dấu chấm
+$dot-margin: 5px; // Khoảng cách giữa các dấu chấm
+$dot-bg-color: rgba(255, 255, 255, $bg-opacity); // Màu nền dấu chấm
+
 .brand-story__inner {
     .home-banner {
         height: 100vh;
@@ -8,6 +27,7 @@
         .image {
             position: absolute;
             bottom: 0;
+            user-select: none;
             left: 0;
             transform-origin: center bottom;
             transition: 1.5s;
@@ -39,8 +59,14 @@
                 .banner-title {
                     font-size: 2rem;
                     font-weight: bold;
+
                     .split-parent {
                         margin: 0;
+                        overflow: hidden;
+                        &.slide-up {
+                            animation: slideUp 1s ease forwards;
+                            animation-delay: 1s; 
+                        }
                     }
                     margin-bottom: 6.5625rem;
                 }
@@ -56,9 +82,73 @@
                 }
             }
         }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            position: absolute;
+            bottom: 13%;
+            left: 15%; // Căn giữa theo chiều ngang
+            transform: translateX(-50%); // Căn giữa hoàn toàn
+        }
+
+        .dot {
+            margin: 0 $dot-margin;
+            border-radius: 9999px; 
+            background-color: $dot-bg-color; 
+            width: $dot-width; 
+            height: $dot-height; 
+            opacity: 0.3; 
+            cursor: pointer; 
+
+            transition: background-color 0.3s, opacity 0.3s; // Hiệu ứng chuyển tiếp
+        }
+
+        .dot.active {
+            opacity: 1; // Độ mờ khi active
+            background-color: rgb(255, 255, 255); // Màu nền khi active
+        }
     }
 }
 
+@media screen and (max-width: 1920px) {
+    .brand-story__inner {
+        .home-banner {
+            .caption {
+                .content {
+                    .banner-title {
+                        font-size: 4.208vw !important;
+                        .split-parent {
+                        }
+                    }
+                    .desc {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .brand-story__inner {
+        .home-banner {
+            .caption {
+                .content {
+                    .banner-title {
+                        font-size: 3.75rem;
+                        letter-spacing: -0.01em;
+                        .split-parent {
+                        }
+                        margin-bottom: 3.5625rem;
+                    }
+                    .desc {
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1200px) {
 }
 
@@ -71,13 +161,14 @@
             }
 
             .caption {
-                bottom: 30%;
+                top: 20%;
 
                 .content {
                     .banner-title {
-                        margin-bottom: 3.5625rem;
+                        font-size: 2rem !important;
                     }
                     .desc {
+                        font-size: 2rem !important;
                     }
                 }
             }
@@ -94,15 +185,20 @@
             }
 
             .caption {
-                bottom: 20%;
+                top: 20%;
 
                 .content {
                     .banner-title {
-                        margin-bottom: 3.5625rem;
+                        font-size: 2rem !important;
                     }
                     .desc {
+                        font-size: 2rem !important;
                     }
                 }
+            }
+
+            .dots {
+                bottom: 8% !important;
             }
         }
     }
