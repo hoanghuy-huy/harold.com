@@ -1,17 +1,19 @@
 import React from 'react';
 import './ProductPage.scss';
-import CardProduct from '~/components/CardProduct';
 import ScrollToTop from '~/components/ScrollToTop';
 import images from '~/assets/images';
 import { Link } from 'react-router-dom';
+import CardProduct from './CardProduct/CardProduct';
 const ProductPage = () => {
     ScrollToTop();
-    console.log(images.matNaCuu)
+    console.log(images.matNaCuu);
     return (
-        <div className="product-page section">
+        <div className="product-page">
+            <header className="product-page-header">
+                <h1 className="title">Sản phẩm</h1>
+            </header>
             <div className="container">
-                <div className="product-wrap">
-                    <h1 className="title">Sản phẩm</h1>
+                {/* <div className="product-wrap ">
                     <div className="product-list">
                         <CardProduct
                             src={images.Toner}
@@ -56,6 +58,38 @@ Moisturizer sẽ cấp ẩm trực tiếp cho da, đồng thời khóa giữ đ�
                         />
 
                     </div>
+                </div> */}
+                <div className="product-box">
+                    <Link className="prod-hot">
+                        <div className="prod-wide-cont">
+                            <div className="prod-wide__img-wrap">
+                            <div className="content-text">
+                                <span class="prod-wide__brow">
+                                    WATER BANK BLUE HYALUNIC CREAM
+                                </span>
+                                <h2 class="prod-wide__title">
+                                    워터뱅크 블루
+                                    <br /> 
+                                    히알루로닉 크림
+                                </h2>
+                                <p class="prod-wide__desc">
+                                    내 피부 타입과 컨디션에 맞춰진,
+                                    <br />더 강력해진 장벽 크림
+                                </p>
+                            </div>
+                                <img
+                                    src="https://www.laneige.com/kr/ko/assets/image/best-new/new-product/20230100_final_KR_WATER-BANK_Best-New_NewPD.jpg"
+                                    alt="https://www.laneige.com/kr/ko/assets/image/best-new/new-product/20230100_final_KR_WATER-BANK_Best-New_NewPD.jpg"
+                                />
+                            </div>
+                        </div>
+                    </Link>
+                    <div className="prod-list">
+                        <CardProduct />
+                        <CardProduct />
+                        <CardProduct />
+                        <CardProduct />
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,7 +97,6 @@ Moisturizer sẽ cấp ẩm trực tiếp cho da, đồng thời khóa giữ đ�
 };
 
 export default ProductPage;
-
 
 // import React from 'react';
 // import './ProductPage.scss';

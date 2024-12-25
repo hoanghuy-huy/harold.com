@@ -10,13 +10,20 @@ import DetailProductPage from './pages/DetailProductPage';
 import CompanyIntroductionPage from './pages/CompanyIntroductionPage';
 
 const App = () => {
+    const handleClick = () => {
+        window.open('https://m.me/huynh.hoang.huy.752747/', '_blank');
+    };
     return (
         <div className="App">
             <Router>
                 <Nav />
                 <div className="App">
                     <Routes>
-                        <Route exact={true} path={'/'} element={<HomePage />} />
+                        <Route
+                            exact={true}
+                            path={'/'}
+                            element={<CompanyIntroductionPage />}
+                        />
                         <Route
                             exact={true}
                             path={'/product'}
@@ -27,25 +34,16 @@ const App = () => {
                             path={'/product/:productId'}
                             element={<DetailProductPage />}
                         />
-                        <Route
-                            exact={true}
-                            path={'/brand-story'}
-                            element={<CompanyIntroductionPage />}
-                        />
                     </Routes>
                     <div className="contact-fixed">
                         <ul>
-                            <li>
+                            <li
+                                onClick={handleClick}
+                                className="contact-button"
+                            >
                                 <img
                                     src="https://unila.com.vn/wp-content/uploads/2024/06/mess.png"
-                                    alt=""
-                                />
-                            </li>
-
-                            <li>
-                                <img
-                                    src="https://unila.com.vn/wp-content/uploads/2024/06/mess.png"
-                                    alt=""
+                                    alt="messenger-icon"
                                 />
                             </li>
                         </ul>

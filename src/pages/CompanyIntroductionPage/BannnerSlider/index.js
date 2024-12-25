@@ -77,7 +77,7 @@ const BannerSlider = () => {
                     initial="hidden"
                     animate={isAnimating ? 'visible' : 'hidden'}
                     variants={imageVariants}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1 }}
                 >
                     <motion.img
                         src={currentContent.image}
@@ -85,7 +85,7 @@ const BannerSlider = () => {
                         initial="hidden"
                         animate={isAnimating ? 'visible' : 'hidden'}
                         variants={imageVariants}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 1.4 }}
                     />
                 </motion.div>
                 <div className="caption container">

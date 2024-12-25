@@ -1,6 +1,5 @@
-
 .detail-product-page {
-    margin-top: 10px;
+    margin-top: 20px;
 
     .container {
         .row {
@@ -21,6 +20,8 @@
 
                 padding-left: 100px;
                 .title {
+                    width: 100%;
+                    text-align: center;
                     margin-bottom: 10px;
                 }
                 .desc {
@@ -29,6 +30,54 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 1.25;
+                }
+
+                .btn-buy {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin-top: 20px;
+                    .btn {
+                        width: 180px;
+                        height: 60px;
+                        cursor: pointer;
+                        background: transparent;
+                        border: 1px solid #a50808;
+                        outline: none;
+                        transition: 1s ease-in-out;
+                    }
+
+                    svg {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        fill: none;
+                        stroke: #6e97ff;
+                        stroke-dasharray: 150 480;
+                        stroke-dashoffset: 150;
+                        transition: 1s ease-in-out;
+                    }
+
+                    .btn:hover {
+                        transition: 1s ease-in-out;
+                        background: #6e97ff;
+                        border: 1px solid #fff;
+                        span {
+                            color: #fff !important;
+                        }
+                    }
+
+                    .btn:hover svg {
+                        stroke-dashoffset: -480;
+                    }
+
+                    .btn span {
+                        color: #a50808;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
                 }
             }
         }

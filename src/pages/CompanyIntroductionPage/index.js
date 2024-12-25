@@ -3,6 +3,7 @@ import './BrandStory.scss';
 import BannerSlider from './BannnerSlider';
 import ProductIntroductionSection from './ProductIntroductionSection';
 import BestSeller from './BestSeller';
+import BrandingSec from './BrandingSec';
 
 const CompanyIntroductionPage = () => {
     return (
@@ -11,6 +12,7 @@ const CompanyIntroductionPage = () => {
                 <BannerSlider />
                 <ProductIntroductionSection />
                 <BestSeller />
+                <BrandingSec />
             </div>
         </article>
     );

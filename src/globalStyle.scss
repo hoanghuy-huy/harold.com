@@ -123,3 +123,7 @@ video {
         bottom: calc(20 / 1920 * 100rem);
     }
 }
+
+img {
+    user-select: none;
+}
