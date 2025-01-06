@@ -44,7 +44,6 @@
                     font-weight: 300;
                 }
                 .desc {
-                    
                     --tw-text-opacity: 1;
                     color: rgb(36 32 33 / var(--tw-text-opacity));
                     font-weight: 400;
@@ -87,7 +86,6 @@
     }
 }
 
-
 @media screen and (max-width: 1000px) {
     .BrandStory {
         margin-top: 500px;
@@ -106,6 +104,29 @@
                 .contentText {
                     width: 100% !important;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .BrandStory {
+        margin-top: 700px;
+
+        .container {
+            .contentLeft {
+                width: 100% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .imgContainer {
+                    width: 80% !important;
+                    img {
+                        width: auto !important;
+                    }
+                }
+            }
+            .contentRight {
             }
         }
     }

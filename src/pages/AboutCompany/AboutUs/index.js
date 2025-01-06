@@ -17,7 +17,7 @@ export default function AboutUs() {
                 <div className={styled.content} ref={ref}>
                     <motion.div
                         className={styled.contentLeft}
-                        initial={{ opacity: 0, y: 50 }} // Bắt đầu với opacity 0 và dịch chuyển xuống
+                        initial={{ opacity: 0, y: 50 }} 
                         animate={{
                             opacity: isInView ? 1 : 0,
                             y: isInView ? 0 : 50,

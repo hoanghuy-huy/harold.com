@@ -2,10 +2,30 @@ import React, { useRef } from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import './Nav.scss';
 import images from '~/assets/images';
+import SelectedComp from './SelectedComp';
+import { useLanguage } from '~/Hooks/Context/LanguageProvider';
+
+const translations = {
+    en: {
+        intro: 'Introduction',
+        products: 'Products',
+        contact: 'Contact',
+    },
+    vi: {
+        intro: 'Giới thiệu',
+        products: 'Sản phẩm',
+        contact: 'Liên Hệ',
+    },
+    ko: {
+        intro: '소개',
+        products: '제품',
+        contact: '연락처',
+    },
+};
 
 const Nav = () => {
     const menu = useRef();
-
+    const { language } = useLanguage();
     const menuHandler = () => {
         menu.current.classList.toggle('show-nav');
     };
@@ -24,17 +44,19 @@ const Nav = () => {
             <ul ref={menu}>
                 <li>
                     <NavLink to="/gioi-thieu" onClick={closeMenu}>
-                        Giới thiệu
+                        {translations[language].intro} {/* Hiển thị bản dịch */}
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/san-pham" onClick={closeMenu}>
-                        Sản phẩm
+                        {translations[language].products}{' '}
+                        {/* Hiển thị bản dịch */}
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/lien-he" onClick={closeMenu}>
-                        Liên Hệ
+                        {translations[language].contact}{' '}
+                        {/* Hiển thị bản dịch */}
                     </NavLink>
                 </li>
             </ul>
@@ -51,10 +73,11 @@ const Nav = () => {
                         <span className="bar bottom"></span>
                     </span>
                 </div>
-            </div>
-            <div className="contact">
-                <span className="title">Liên hệ ngay</span>
-                <span className="phone">0989.401.800</span>
+                <div className="header-right">
+                    <div className="btn-language">
+                        <SelectedComp />
+                    </div>
+                </div>
             </div>
         </div>
     );

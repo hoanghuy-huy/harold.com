@@ -145,6 +145,7 @@
         text-transform: uppercase;
     }
     .action {
+        display: flex;
         .btn {
             display: none;
             --tw-rotate: 0deg;
@@ -275,12 +276,26 @@
                 }
             }
         }
+
+        .header-right {
+            width: 100px;
+            .btn-language {
+                display: flex;
+                justify-content: end;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
     .action {
+        .btn-language {
+            order: 1;
+            margin: 0 10px;
+        }
+
         .btn {
+            order: 2;
             display: block !important;
         }
     }
