@@ -11,7 +11,7 @@ const CertificateSection = () => {
             <div className="contentLeft">
                 <div className="imgContainer">
                     <motion.img
-                        src="https://unila.com.vn/wp-content/uploads/2024/06/4.jpg"
+                        src="https://iwood.com.vn/wp-content/uploads/2022/12/iso-11-scaled.jpg" 
                         alt="Chứng chỉ"
                         initial={{ opacity: 0, x: -100 }}
                         animate={{
@@ -42,7 +42,7 @@ const CertificateSection = () => {
                         }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                        ISO 13485:2016
+                        GMP (Good Manufacturing Practice)
                     </motion.h3>
                     <div className="desc">
                         <motion.p
@@ -53,9 +53,9 @@ const CertificateSection = () => {
                             }}
                             transition={{ duration: 0.5, delay: 0.6 }}
                         >
-                            Tiêu chuẩn ISO 13485:2016 được áp dụng vào hệ thống
-                            quản lý chất lượng liên quan đến thiết kế, sản xuất,
-                            lắp đặt và bảo dưỡng các thiết bị y tế.
+                            Tiêu chuẩn GMP đảm bảo rằng sản phẩm được sản xuất và kiểm soát
+                            theo tiêu chuẩn chất lượng nhất định, nhằm bảo vệ sức khỏe
+                            người tiêu dùng.
                         </motion.p>
                     </div>
                 </div>

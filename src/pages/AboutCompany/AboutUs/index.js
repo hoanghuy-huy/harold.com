@@ -11,6 +11,7 @@ export default function AboutUs() {
         once: true,
     });
     const isHeaderInView = useInView(headerRef, { once: true });
+    
     return (
         <section className={styled.aboutUs}>
             <div className={styled.container}>
@@ -38,14 +39,13 @@ export default function AboutUs() {
                             </motion.h1>
                             <div className={styled.desc}>
                                 <h3>
-                                    Giới thiệu UNILA Việt Nam – Nhà máy sản xuất
-                                    mỹ phẩm xu thế mới
+                                    Giới thiệu về Công ty Sản xuất Mỹ phẩm Hàng đầu
                                 </h3>
                                 {[
-                                    'Gia công mỹ phẩm UNILA chuyên cung cấp dịch vụ liên quan đến sản xuất, gia công, nghiên cứu và phát triển các dòng mỹ phẩm theo hình thức OEM/ODM.',
-                                    'Gia công mỹ phẩm UNILA chuyên cung cấp dịch vụ liên quan đến sản xuất, gia công, nghiên cứu và phát triển các dòng mỹ phẩm theo hình thức OEM/ODM.',
-                                    'Gia công mỹ phẩm UNILA chuyên cung cấp dịch vụ liên quan đến sản xuất, gia công, nghiên cứu và phát triển các dòng mỹ phẩm theo hình thức OEM/ODM.',
-                                    'Gia công mỹ phẩm UNILA chuyên cung cấp dịch vụ liên quan đến sản xuất, gia công, nghiên cứu và phát triển các dòng mỹ phẩm theo hình thức OEM/ODM.',
+                                    'Chúng tôi chuyên cung cấp dịch vụ sản xuất và gia công mỹ phẩm chất lượng cao, với quy trình hiện đại và tiêu chuẩn an toàn nghiêm ngặt.',
+                                    'Đội ngũ chuyên gia của chúng tôi có kinh nghiệm dày dạn trong ngành công nghiệp mỹ phẩm, cam kết mang đến sản phẩm tốt nhất cho khách hàng.',
+                                    'Chúng tôi luôn cập nhật công nghệ mới và xu hướng thị trường, để phát triển các sản phẩm đáp ứng nhu cầu đa dạng của người tiêu dùng.',
+                                    'Với tâm huyết và sự sáng tạo, chúng tôi không ngừng nỗ lực để đem lại giá trị và sự hài lòng cho khách hàng qua từng sản phẩm.'
                                 ].map((text, index) => (
                                     <motion.p
                                         key={index}
@@ -76,7 +76,7 @@ export default function AboutUs() {
                     >
                         <div className={styled.imgContainer}>
                             <img
-                                src="https://unila.com.vn/wp-content/uploads/2024/10/UNILA-VIET-NAM-GIA-CONG-MY-PHAM.jpg"
+                                src="https://unila.com.vn/wp-content/uploads/2024/10/UNILA-VIET-NAM-GIA-CONG-MY-PHAM.jpg" 
                                 alt="about-us"
                             />
                         </div>
