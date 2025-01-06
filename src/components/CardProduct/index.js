@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import images from '~/assets/images';
 const CardProduct = ({ src, title, desc, path }) => {
     return (
-        <Link to={'/product/' + path}>
+        <Link to={'/san-pham/' + path}>
             <article className="product-item">
                 <div className="image">
                     <div className="flipper">

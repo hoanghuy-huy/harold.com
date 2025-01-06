@@ -28,7 +28,6 @@ const BannerSlider = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(true);
-
     useEffect(() => {
         const interval = setInterval(() => {
             setIsAnimating(false);
@@ -37,24 +36,24 @@ const BannerSlider = () => {
                     (prevIndex) => (prevIndex + 1) % contents.length,
                 );
                 setIsAnimating(true);
-            }, 800);
-        }, 9000);
+            }, 700);
+        }, 7000);
 
         return () => clearInterval(interval);
     }, []);
 
     const handleDotClick = (index) => {
+        if (index === currentIndex) return;
         setIsAnimating(false);
         setTimeout(() => {
             setCurrentIndex(index);
             setIsAnimating(true);
-            // Thêm class slide-up cho các phần tử
             const splitParents = document.querySelectorAll('.split-parent');
             splitParents.forEach((el, idx) => {
                 el.classList.add('slide-up');
-                setTimeout(() => el.classList.remove('slide-up'), 1000);
+                setTimeout(() => el.classList.remove('slide-up'), 700);
             });
-        }, 800);
+        }, 7000);
     };
 
     const titleVariants = {
@@ -126,7 +125,6 @@ const BannerSlider = () => {
                             className={`dot ${
                                 index === currentIndex ? 'active' : ''
                             }`}
-                            onClick={() => handleDotClick(index)}
                         ></span>
                     ))}
                 </div>

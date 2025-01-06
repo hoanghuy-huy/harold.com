@@ -8,6 +8,8 @@ import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import DetailProductPage from './pages/DetailProductPage';
 import CompanyIntroductionPage from './pages/CompanyIntroductionPage';
+import AboutCompany from './pages/AboutCompany/Index';
+import ContactPage from './pages/ContactPage';
 
 const App = () => {
     const handleClick = () => {
@@ -26,13 +28,23 @@ const App = () => {
                         />
                         <Route
                             exact={true}
-                            path={'/product'}
+                            path={'/san-pham'}
                             element={<ProductPage />}
                         />
                         <Route
                             exact={true}
-                            path={'/product/:productId'}
+                            path={'/gioi-thieu'}
+                            element={<AboutCompany />}
+                        />
+                        <Route
+                            exact={true}
+                            path={'/san-pham/:productId'}
                             element={<DetailProductPage />}
+                        />
+                        <Route
+                            exact={true}
+                            path={'/lien-he'}
+                            element={<ContactPage />}
                         />
                     </Routes>
                     <div className="contact-fixed">

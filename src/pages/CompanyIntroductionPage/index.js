@@ -4,6 +4,8 @@ import BannerSlider from './BannnerSlider';
 import ProductIntroductionSection from './ProductIntroductionSection';
 import BestSeller from './BestSeller';
 import BrandingSec from './BrandingSec';
+import BackgroundComp from './BackgroundComp';
+import Background from './BackgroundComp';
 
 const CompanyIntroductionPage = () => {
     return (
@@ -14,6 +16,7 @@ const CompanyIntroductionPage = () => {
                 <BestSeller />
                 <BrandingSec />
             </div>
+            <Background />
         </article>
     );
 };

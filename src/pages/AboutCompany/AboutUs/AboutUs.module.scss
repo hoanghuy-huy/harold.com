@@ -1,0 +1,73 @@
+.aboutUs {
+    padding-top: calc(80 / 1920 * 100rem);
+    padding-bottom: calc(80 / 1920 * 100rem);
+    width: 100%;
+
+    .container {
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: calc(1440 / 1920 * 100rem);
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+         
+            .contentLeft {
+                width: 50%;
+                padding: 10px 30px;
+                .contentText {
+                    margin-top: 20px;
+                    padding-right: 100px;
+                    .title {
+                        padding: 15px 0;
+                        text-transform: uppercase;
+                    }
+                    .desc {
+                        --tw-text-opacity: 1;
+                        color: rgb(36 32 33 / var(--tw-text-opacity));
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.25;
+
+                        margin-top: calc(20 / 1920 * 100rem);
+                        margin-bottom: calc(20 / 1920 * 100rem);
+                        h3 {
+                            margin-top: calc(24 / 1920 * 100rem);
+                        }
+                        p {
+                            margin-top: calc(20 / 1920 * 100rem);
+                            margin-bottom: calc(20 / 1920 * 100rem);
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .contentRight {
+                width: 50%;
+                .imgContainer {
+                    .img {
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .aboutUs {
+        .container {
+            .content {
+                .contentLeft {
+                    margin-top: -50px !important;
+                    width: 100% !important;
+                }
+                .contentRight {
+                    margin-top: 20px;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

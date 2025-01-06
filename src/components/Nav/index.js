@@ -23,10 +23,19 @@ const Nav = () => {
             </div>
             <ul ref={menu}>
                 <li>
-                    <NavLink to="/" onClick={closeMenu}>Giới thiệu</NavLink>
+                    <NavLink to="/gioi-thieu" onClick={closeMenu}>
+                        Giới thiệu
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/product" onClick={closeMenu}>Sản phẩm</NavLink>
+                    <NavLink to="/san-pham" onClick={closeMenu}>
+                        Sản phẩm
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/lien-he" onClick={closeMenu}>
+                        Liên Hệ
+                    </NavLink>
                 </li>
             </ul>
 

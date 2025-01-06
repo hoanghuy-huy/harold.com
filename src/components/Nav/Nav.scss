@@ -72,9 +72,9 @@
     }
 }
 .nav-wrapper {
-    height: 80px;
+    height: var(--height-header);
     width: 100%;
-    padding: 0 15%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,12 +119,13 @@
             display: inline-block;
             margin: 0 15px;
             user-select: none;
-
             .active {
                 color: var(--second-color);
             }
             a {
+                font-size: 13px;
                 transition-duration: 200ms;
+                text-transform: uppercase;
                 transition-property: all;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-timing-function: linear;

@@ -1,0 +1,54 @@
+.certificateSection {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fbfbfb;
+    .contentLeft {
+        width: 50%;
+        .imgContainer {
+            height: 415px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .contentRight {
+        width: 50%;
+        .contentText {
+            h2 {
+                font-size: 37px;
+                text-transform: uppercase;
+                padding: 24px 0;
+                border-bottom: 1px solid rgb(168 166 167 / 0.5);
+            }
+            h3 {
+                padding: 10px 0;
+                font-size: 24px;
+            }
+            .desc {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .certificateSection {
+        flex-wrap: wrap-reverse !important;
+        margin-bottom: 40px;
+        .contentLeft {
+            width: 100% !important;
+        }
+        .contentRight {
+            width: 100% !important;
+        }
+    }
+
+    .section {
+        padding: 0 5% !important;
+    }
+}
