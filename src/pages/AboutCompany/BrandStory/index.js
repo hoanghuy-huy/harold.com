@@ -14,7 +14,7 @@ const BrandStory = () => {
                         <motion.img
                             src="https://unila.com.vn/wp-content/uploads/2024/10/Gia-cong-my-pham-unila-viet-nam-IM2.png"
                             alt="Câu chuyện thương hiệu"
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0 }}
                             animate={{
                                 opacity: isInView ? 1 : 0,
                                 y: isInView ? 0 : 70,

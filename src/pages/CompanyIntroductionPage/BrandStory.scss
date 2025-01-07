@@ -23,6 +23,8 @@ $dot-bg-color: rgba(255, 255, 255, $bg-opacity); // Màu nền dấu chấm
         width: 100%;
         position: relative;
         margin-top: 10px;
+        overflow: hidden;
+        font-family: 'Be Vietnam Pro', serif !important;
 
         .image {
             position: absolute;
@@ -59,13 +61,12 @@ $dot-bg-color: rgba(255, 255, 255, $bg-opacity); // Màu nền dấu chấm
                 .banner-title {
                     font-size: 2rem;
                     font-weight: bold;
-
                     .split-parent {
                         margin: 0;
                         overflow: hidden;
                         &.slide-up {
                             animation: slideUp 1s ease forwards;
-                            animation-delay: 1s; 
+                            animation-delay: 1s;
                         }
                     }
                     margin-bottom: 6.5625rem;
@@ -95,12 +96,12 @@ $dot-bg-color: rgba(255, 255, 255, $bg-opacity); // Màu nền dấu chấm
 
         .dot {
             margin: 0 $dot-margin;
-            border-radius: 9999px; 
-            background-color: $dot-bg-color; 
-            width: $dot-width; 
-            height: $dot-height; 
-            opacity: 0.3; 
-            cursor: pointer; 
+            border-radius: 9999px;
+            background-color: $dot-bg-color;
+            width: $dot-width;
+            height: $dot-height;
+            opacity: 0.3;
+            cursor: pointer;
 
             transition: background-color 0.3s, opacity 0.3s; // Hiệu ứng chuyển tiếp
         }

@@ -5,7 +5,7 @@ import './ProductIntroductionSection.scss';
 
 const ProductIntroductionSection = () => {
     const { ref, inView } = useInView({
-        threshold: 0.4  ,
+        threshold: 0.4,
     });
 
     const animationVariants = {
@@ -37,15 +37,17 @@ const ProductIntroductionSection = () => {
                 transition={{ duration: 0.8 }}
             >
                 <div className="title">
-                    <h3>Khám phá sản phẩm làm chậm quá trình</h3>
-                    <h3>lão hóa da BOUNCY & FIRM</h3>
+                    <h3>LÀ CHÍNH BẠN</h3>
+                    <h3>yêu những gì thuộc về bạn</h3>
                 </div>
                 <div className="content">
                     <p>
-                        Với chiết xuất Hoa mẫu đơn và Phức hợp Collagen +
-                        Peptide™
+                        Vẻ đẹp của bạn bắt nguồn từ sự tự tin và cá tính riêng.
                     </p>
-                    <p>giúp làn da căng mọng sau 1 đêm.</p>
+                    <p>
+                        Khám phá những điều
+                        làm bạn trở nên đặc biệt.
+                    </p>
                 </div>
             </motion.div>
             <div className="divider"></div>

@@ -23,11 +23,11 @@ const Footer = () => {
                             Thành phố Bảo Lộc - Tỉnh Lâm Đồng - Việt Nam
                         </li>
                         <li>
-                            <strong>Hotline:</strong> 0989.401.800 - 0394.682.913 - 0367.764.624 
+                            <strong>Hotline:</strong> 0989.401.800 -
+                            0394.682.913 - 0367.764.624
                         </li>
                         <li>
-                            <strong>Email:</strong>{' '}
-                            haroldgroupcos@gmail.com
+                            <strong>Email:</strong> haroldgroupcos@gmail.com
                         </li>
                     </ul>
                 </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                     <ul class="footer-list">
                         <li>
                             <span>Tiktok</span>
-                            <FontAwesomeIcon icon={faTiktok} className='mt-2'/>
+                            <FontAwesomeIcon icon={faTiktok} className="mt-2" />
                         </li>
                         <li>
                             <span>Facebook</span>

@@ -1,23 +1,19 @@
 .BrandStory {
-    height: 100vh;
     width: 100%;
     .container {
         width: 100%;
-        height: 100%;
-        max-width: 1440px;
-        margin: 0 auto;
 
         display: flex;
         flex-wrap: wrap-reverse;
         .contentLeft {
+            transform: none;
             width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-left: 30px;
             .imgContainer {
-                height: 90%;
-                max-width: 33.333333333333336rem;
+                width:65%;
+                
                 img {
                     width: 100%;
                     height: 100%;
@@ -64,13 +60,13 @@
 }
 @media screen and (max-width: 1300px) {
     .BrandStory {
-        margin-top: 500px;
-
         .container {
             .contentLeft {
                 width: 100% !important;
-                justify-content: start !important;
-
+                display: flex;
+                justify-content: center !important;
+                align-items: center;
+                margin: 0 20%;
                 .imgContainer {
                     width: 100% !important;
                 }
@@ -88,11 +84,9 @@
 
 @media screen and (max-width: 1000px) {
     .BrandStory {
-        margin-top: 500px;
         .container {
             .contentLeft {
                 width: 100% !important;
-                justify-content: start !important;
 
                 .imgContainer {
                     width: 100% !important;
@@ -111,10 +105,28 @@
 
 @media screen and (max-width: 800px) {
     .BrandStory {
-        margin-top: 700px;
-
         .container {
             .contentLeft {
+                width: 100% !important;
+                .imgContainer {
+                    width: 100% !important;
+                    img {
+                        width: 100% !important;
+                    }
+                }
+            }
+            .contentRight {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .BrandStory {
+        .container {
+            .contentLeft {
+                .contentText {
+                }
                 width: 100% !important;
                 display: flex;
                 justify-content: center;
@@ -122,11 +134,11 @@
                 .imgContainer {
                     width: 80% !important;
                     img {
-                        width: auto !important;
                     }
                 }
             }
             .contentRight {
+           
             }
         }
     }

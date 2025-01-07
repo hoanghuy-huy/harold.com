@@ -4,24 +4,27 @@ import './BannerSlider.scss';
 const BannerSlider = () => {
     const contents = [
         {
-            title: 'GIẢI PHÁP ĐỘC BẢN',
-            subtitle: 'PRODUCT INSIGHT',
+            title: 'CÔNG TY SẢN XUẤT MỸ PHẨM HAROLD',
+            subtitle: 'HAROLD COSMETICS COMPANY LIMITED',
             description:
-                'Là quá trình nghiên cứu tạo ra sản phẩm mang tính chiến lược độc bản, giúp khách hàng có tầm nhìn sâu sắc về sản phẩm.',
+                '"Cái tôi" của người chủ sẽ thể hiện rõ nhất qua sản phẩm."Cái tôi sản phẩm" sẽ mang thiên hướng biểu đạt rõ cái tôi của chủ nhân.CEO Thảo Trang',
+
             image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
         },
         {
-            title: 'GIẢI PHÁP MỚI',
-            subtitle: 'NEW SOLUTION',
+            title: 'Beauty, Reimagined. Redefined. Refreshed.',
+            // subtitle: 'HAROLD COSMETICS COMPANY LIMITED',
             description:
-                'Giải pháp mới giúp cải thiện quy trình làm việc và tăng hiệu quả sản xuất.',
+                '"Indulge in our luxurious formulations, infused with essence of beauty. Every product is crafted to harmonize skin and soul, revealing radiant complexity. Embark on a journey to unlock your inner glow, where beauty meets bliss"',
+
             image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
         },
         {
-            title: 'CÔNG NGHỆ TIÊN TIẾN',
-            subtitle: 'ADVANCED TECHNOLOGY',
+            title: 'Vẻ đẹp không chỉ nhìn thấy mà còn cảm nhận',
+            // subtitle: 'HAROLD COSMETICS COMPANY LIMITED',
             description:
-                'Ứng dụng công nghệ tiên tiến trong sản xuất, mang lại sản phẩm chất lượng cao.',
+                'Vẻ đẹp thực sự không chỉ nằm ở cái nhìn bề ngoài mà còn tồn tại trong cảm giác mà nó mang lại.',
+
             image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
         },
     ];
@@ -102,7 +105,10 @@ const BannerSlider = () => {
                             <div className="split-parent">
                                 <strong>{currentContent.title}</strong>
                             </div>
-                            <div className="split-parent">
+                            <div
+                                className="split-parent"
+                                style={{ fontSize: 35 }}
+                            >
                                 <strong>{currentContent.subtitle}</strong>
                             </div>
                         </motion.div>

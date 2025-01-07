@@ -6,22 +6,22 @@ import './BrandingSec.scss';
 
 const slides = [
     {
-        title: 'HUG FOR UNIVERSAL GOODNESS',
-        text: '글로벌 다양한 아름다움과\n지속 가능한 지구를 감싸 안는 라네즈의 약속',
+        title: 'WE ARE READY TO STAND BY YOU',
+        text: 'PARTNER, TRUST, GROW\nTHE TOP CHOICE IN THE COSMETICS INDUSTRY',
         imgSrc: 'https://www.laneige.com//kr/ko/layout/main/brandedcontent/__icsFiles/afieldfile/2024/11/14/LNG_05Branded_banner_PC02.jpg',
-        subj: 'HUF FOR',
+        subj: 'BEST',
     },
     {
-        title: 'HUG FOR UNIVERSAL GOODNESS',
-        text: '글로벌 다양한 아름다움과\n지속 가능한 지구를 감싸 안는 라네즈의 약속',
-        imgSrc: 'https://www.laneige.com/kr/ko/assets/image/lbll/lbll_intro_visual_01_pc_220701.jpg',
-        subj: 'HUF FOR',
+        title: 'WE ARE READY TO STAND BY YOU',
+        text: 'PARTNER, TRUST, GROW\nTHE TOP CHOICE IN THE COSMETICS INDUSTRY',
+        imgSrc: 'https://www.laneige.com//kr/ko/layout/main/brandedcontent/__icsFiles/afieldfile/2024/11/14/LNG_05Branded_banner_PC02.jpg',
+        subj: ' COSMETIC',
     },
     {
-        title: 'HUG FOR UNIVERSAL GOODNESS',
-        text: '글로벌 다양한 아름다움과\n지속 가능한 지구를 감싸 안는 라네즈의 약속',
+        title: 'WE ARE READY TO STAND BY YOU',
+        text: 'PARTNER, TRUST, GROW\nTHE TOP CHOICE IN THE COSMETICS INDUSTRY',
         imgSrc: 'https://www.laneige.com//kr/ko/layout/main/brandedcontent/__icsFiles/afieldfile/2024/11/14/LNG_05Branded_banner_PC02.jpg',
-        subj: 'HUF FOR',
+        subj: 'PRODUCTION',
     },
 ];
 
