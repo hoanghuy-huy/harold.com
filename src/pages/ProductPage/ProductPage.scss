@@ -1,5 +1,6 @@
 .product-page {
     margin-top: 70px;
+    margin-bottom: 170px;
     .product-page-header {
         padding-top: 44px;
         margin-bottom: 40px;
@@ -184,6 +185,7 @@
                     cursor: pointer;
 
                     .product-item__thumb {
+                        height: 450px;
                         .product-item__img {
                             height: 100%;
                             object-fit: cover;

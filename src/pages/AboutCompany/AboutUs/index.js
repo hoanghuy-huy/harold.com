@@ -11,14 +11,14 @@ export default function AboutUs() {
         once: true,
     });
     const isHeaderInView = useInView(headerRef, { once: true });
-    
+
     return (
         <section className={styled.aboutUs}>
             <div className={styled.container}>
                 <div className={styled.content} ref={ref}>
                     <motion.div
                         className={styled.contentLeft}
-                        initial={{ opacity: 0, y: 50 }} 
+                        initial={{ opacity: 0, y: 50 }}
                         animate={{
                             opacity: isInView ? 1 : 0,
                             y: isInView ? 0 : 50,
@@ -39,13 +39,14 @@ export default function AboutUs() {
                             </motion.h1>
                             <div className={styled.desc}>
                                 <h3>
-                                    Giới thiệu về Công ty Sản xuất Mỹ phẩm Hàng đầu
+                                    Giới thiệu về Công ty Sản xuất Mỹ phẩm Hàng
+                                    đầu
                                 </h3>
                                 {[
-                                    'Chúng tôi chuyên cung cấp dịch vụ sản xuất và gia công mỹ phẩm chất lượng cao, với quy trình hiện đại và tiêu chuẩn an toàn nghiêm ngặt.',
+                                    'Công ty mỹ phẩm Harold chuyên cung cấp dịch vụ sản xuất và gia công mỹ phẩm chất lượng cao, với quy trình hiện đại và tiêu chuẩn an toàn nghiêm ngặt.',
                                     'Đội ngũ chuyên gia của chúng tôi có kinh nghiệm dày dạn trong ngành công nghiệp mỹ phẩm, cam kết mang đến sản phẩm tốt nhất cho khách hàng.',
                                     'Chúng tôi luôn cập nhật công nghệ mới và xu hướng thị trường, để phát triển các sản phẩm đáp ứng nhu cầu đa dạng của người tiêu dùng.',
-                                    'Với tâm huyết và sự sáng tạo, chúng tôi không ngừng nỗ lực để đem lại giá trị và sự hài lòng cho khách hàng qua từng sản phẩm.'
+                                    'Với tâm huyết và sự sáng tạo, chúng tôi không ngừng nỗ lực để đem lại giá trị và sự hài lòng cho khách hàng qua từng sản phẩm.',
                                 ].map((text, index) => (
                                     <motion.p
                                         key={index}
@@ -75,10 +76,7 @@ export default function AboutUs() {
                         transition={{ duration: 0.5 }}
                     >
                         <div className={styled.imgContainer}>
-                            <img
-                                src="https://unila.com.vn/wp-content/uploads/2024/10/UNILA-VIET-NAM-GIA-CONG-MY-PHAM.jpg" 
-                                alt="about-us"
-                            />
+                            <img src="\Images\about-us.png" alt="about-us" />
                         </div>
                     </motion.div>
                 </div>

@@ -63,32 +63,51 @@ Moisturizer sẽ cấp ẩm trực tiếp cho da, đồng thời khóa giữ đ�
                     <Link className="prod-hot">
                         <div className="prod-wide-cont">
                             <div className="prod-wide__img-wrap">
-                            <div className="content-text">
-                                <span class="prod-wide__brow">
-                                    WATER BANK BLUE HYALUNIC CREAM
-                                </span>
-                                <h2 class="prod-wide__title">
-                                    워터뱅크 블루
-                                    <br /> 
-                                    히알루로닉 크림
-                                </h2>
-                                <p class="prod-wide__desc">
-                                    내 피부 타입과 컨디션에 맞춰진,
-                                    <br />더 강력해진 장벽 크림
-                                </p>
-                            </div>
+                                <div className="content-text">
+                                    <span class="prod-wide__brow">SỬA TẮM</span>
+                                    <h2 class="prod-wide__title"></h2>
+                                    <p class="prod-wide__desc">
+                                        Anti-aging Body Wash
+                                    </p>
+                                </div>
                                 <img
-                                    src="https://www.laneige.com/kr/ko/assets/image/best-new/new-product/20230100_final_KR_WATER-BANK_Best-New_NewPD.jpg"
-                                    alt="https://www.laneige.com/kr/ko/assets/image/best-new/new-product/20230100_final_KR_WATER-BANK_Best-New_NewPD.jpg"
+                                    src="\Images\product6.png"
+                                    alt="public\Images\product6.png"
                                 />
                             </div>
                         </div>
                     </Link>
                     <div className="prod-list">
-                        <CardProduct />
-                        <CardProduct />
-                        <CardProduct />
-                        <CardProduct />
+                        <Link to={'/san-pham/5'}>
+                            <CardProduct
+                                src={'/Images/mask.jpg'}
+                                title={'3-Layer Sheep Mask'}
+                                desc={'Mặt Nạ Cừu 3 Lớp'}
+                                to={'/san-pham/2'}
+                            />
+                        </Link>
+                        <Link to={'/san-pham/2'}>
+                            <CardProduct
+                                src={'/Images/product1.png'}
+                                title={'Moisturizing Serum'}
+                                desc={'Serum Dưỡng Ẩm'}
+                                to={'/san-pham/2'}
+                            />
+                        </Link>
+                        <Link to={2}>
+                            <CardProduct
+                                src={'/Images/product2.png'}
+                                title={'Sunscreen'}
+                                desc={'Kem chống nắng body'}
+                            />
+                        </Link>
+                        <Link to={'/san-pham/3'}>
+                            <CardProduct
+                                src={'/Images/product7.png'}
+                                title={'Hydrating Toner'}
+                                desc={'Dưỡng da'}
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>

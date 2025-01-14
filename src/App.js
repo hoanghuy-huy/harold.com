@@ -48,7 +48,7 @@ const App = () => {
                         />
                     </Routes>
                     <div className="contact-fixed">
-                        <ul>
+                        {/* <ul>
                             <li
                                 onClick={handleClick}
                                 className="contact-button"
@@ -58,7 +58,7 @@ const App = () => {
                                     alt="messenger-icon"
                                 />
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </Router>

@@ -24,7 +24,7 @@ const ProductIntroductionSection = () => {
             >
                 <div className="image-container">
                     <img
-                        src="https://www.laneige.com.vn/media/wysiwyg/1000_x_1000.jpg"
+                        src="/Images/banner-2.png"
                         alt="Sản phẩm"
                     />
                 </div>

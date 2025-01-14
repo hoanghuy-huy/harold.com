@@ -12,7 +12,7 @@ const AboutCompany = () => {
                 <Banner />
                 <AboutUs />
                 <BrandStory />
-                <CertificateSection />
+                {/* <CertificateSection /> */}
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ const BrandStory = () => {
                 <div className={styled.contentLeft}>
                     <div className={styled.imgContainer}>
                         <motion.img
-                            src="https://unila.com.vn/wp-content/uploads/2024/10/Gia-cong-my-pham-unila-viet-nam-IM2.png"
+                            src="\Images\story.png"
                             alt="Câu chuyện thương hiệu"
                             initial={{ opacity: 0 }}
                             animate={{
@@ -43,13 +43,15 @@ const BrandStory = () => {
                             }}
                             transition={{ duration: 0.5, delay: 0.3 }}
                         >
-                            Nâng tầm thương hiệu mỹ phẩm Việt
+                            Khẳng định đẳng cấp mỹ phẩm Việt
                             <br />
-                            Xóa bỏ định kiến mỹ phẩm OEM/ODM
+                            Xây dựng niềm tin cho mỹ phẩm Việt
                         </motion.h3>
                         <div className={styled.desc}>
                             {[
-                                'Trong thế giới hiện đại, việc chăm sóc bản thân ngày càng trở nên quan trọng hơn bao giờ hết. Người tiêu dùng ngày nay tìm kiếm những sản phẩm không chỉ hiệu quả mà còn an toàn cho sức khỏe. Với nhu cầu ngày càng tăng về mỹ phẩm tự nhiên và hữu cơ, nhiều thương hiệu đã nổi lên để đáp ứng mong đợi này. Họ cam kết mang đến những sản phẩm chất lượng cao, được chiết xuất từ nguyên liệu thiên nhiên, không chứa hóa chất độc hại. Bằng sự sáng tạo và nghiên cứu không ngừng, các thương hiệu này nỗ lực mang lại những giải pháp làm đẹp bền vững và thân thiện với môi trường, giúp người tiêu dùng tự tin tỏa sáng với vẻ đẹp tự nhiên của mình.',
+                                'Mỹ phẩm Harold ra đời với sứ mệnh mang đến những sản phẩm chất lượng cao, an toàn và hiệu quả cho người tiêu dùng. Trong bối cảnh thị trường mỹ phẩm ngày càng phát triển, chúng tôi cam kết cung cấp các sản phẩm được chiết xuất từ nguyên liệu tự nhiên, không chứa hóa chất độc hại.',
+                                'Chúng tôi hiểu rằng vẻ đẹp không chỉ đến từ sản phẩm, mà còn từ sự tin tưởng và uy tín. Với đội ngũ chuyên gia giàu kinh nghiệm, Harold không ngừng nghiên cứu và phát triển các sản phẩm đổi mới, đáp ứng nhu cầu ngày càng cao của khách hàng.',
+                                'Với tâm huyết và sự sáng tạo, mỹ phẩm Harold hướng đến việc xây dựng một thương hiệu mạnh mẽ, góp phần nâng tầm mỹ phẩm Việt Nam trên thị trường quốc tế. Chúng tôi tự hào về giá trị mà sản phẩm của mình mang lại và cam kết mang đến sự hài lòng cho khách hàng qua từng sản phẩm.',
                             ].map((text, index) => (
                                 <motion.p
                                     key={index}

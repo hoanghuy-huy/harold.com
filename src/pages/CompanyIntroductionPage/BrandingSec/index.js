@@ -8,19 +8,21 @@ const slides = [
     {
         title: 'WE ARE READY TO STAND BY YOU',
         text: 'PARTNER, TRUST, GROW\nTHE TOP CHOICE IN THE COSMETICS INDUSTRY',
-        imgSrc: 'https://www.laneige.com//kr/ko/layout/main/brandedcontent/__icsFiles/afieldfile/2024/11/14/LNG_05Branded_banner_PC02.jpg',
+        imgSrc: '/Images/banding.png',
         subj: 'BEST',
     },
     {
         title: 'WE ARE READY TO STAND BY YOU',
         text: 'PARTNER, TRUST, GROW\nTHE TOP CHOICE IN THE COSMETICS INDUSTRY',
-        imgSrc: 'https://www.laneige.com//kr/ko/layout/main/brandedcontent/__icsFiles/afieldfile/2024/11/14/LNG_05Branded_banner_PC02.jpg',
+        imgSrc: '/Images/banding.png',
+
         subj: ' COSMETIC',
     },
     {
         title: 'WE ARE READY TO STAND BY YOU',
         text: 'PARTNER, TRUST, GROW\nTHE TOP CHOICE IN THE COSMETICS INDUSTRY',
-        imgSrc: 'https://www.laneige.com//kr/ko/layout/main/brandedcontent/__icsFiles/afieldfile/2024/11/14/LNG_05Branded_banner_PC02.jpg',
+        imgSrc: '/Images/banding.png',
+
         subj: 'PRODUCTION',
     },
 ];

@@ -7,17 +7,17 @@ const BannerSlider = () => {
             title: 'CÔNG TY SẢN XUẤT MỸ PHẨM HAROLD',
             subtitle: 'HAROLD COSMETICS COMPANY LIMITED',
             description:
-                '"Cái tôi" của người chủ sẽ thể hiện rõ nhất qua sản phẩm."Cái tôi sản phẩm" sẽ mang thiên hướng biểu đạt rõ cái tôi của chủ nhân.CEO Thảo Trang',
+                '"Cái tôi" của người chủ sẽ thể hiện rõ nhất qua sản phẩm.\n"Cái tôi sản phẩm" sẽ mang thiên hướng biểu đạt rõ cái tôi của chủ nhân.\nCEO Thảo Trang',
 
-            image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
+            image: '/Images/home-banner-1.png',
         },
         {
             title: 'Beauty, Reimagined. Redefined. Refreshed.',
             // subtitle: 'HAROLD COSMETICS COMPANY LIMITED',
             description:
-                '"Indulge in our luxurious formulations, infused with essence of beauty. Every product is crafted to harmonize skin and soul, revealing radiant complexity. Embark on a journey to unlock your inner glow, where beauty meets bliss"',
+                '"Indulge in our luxurious formulations, infused with essence of beauty. Every product is crafted to harmonize skin and soul, revealing radiant complexity."',
 
-            image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
+            image: '/Images/home-banner-1.png',
         },
         {
             title: 'Vẻ đẹp không chỉ nhìn thấy mà còn cảm nhận',
@@ -25,7 +25,7 @@ const BannerSlider = () => {
             description:
                 'Vẻ đẹp thực sự không chỉ nằm ở cái nhìn bề ngoài mà còn tồn tại trong cảm giác mà nó mang lại.',
 
-            image: 'https://unila.com.vn/wp-content/uploads/2024/10/GIA-CONG-MY-PHAM-UNILA-PRODUCT-INSIGHT-01.jpg',
+            image: '/Images/home-banner-1.png',
         },
     ];
 
@@ -119,8 +119,16 @@ const BannerSlider = () => {
                             variants={titleVariants}
                             transition={{ duration: 0.8, delay: 0.5 }}
                             key={`${currentIndex}-desc`}
+                            style={{ color: '#fff' }}
                         >
-                            <p>{currentContent.description}</p>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: currentContent.description.replace(
+                                        /\n/g,
+                                        '<br />',
+                                    ),
+                                }}
+                            />
                         </motion.div>
                     </div>
                 </div>

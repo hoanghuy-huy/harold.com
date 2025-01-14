@@ -14,24 +14,23 @@ const ContactPage = () => {
                         <div className="desc">
                             <p>
                                 {' '}
-                                <strong>Địa chỉ:</strong> 4E Cư Xá Đồng Tiến,
-                                phường 14, Quận 10 , TP. HCM
+                                <strong>Địa chỉ:</strong> 91/15 Hà Giang - P1 -
+                                Thành phố Bảo Lộc - Tỉnh Lâm Đồng - Việt Nam
                             </p>
-                            <p>
+                            {/* <p>
                                 <strong>Nhà máy:</strong> 160A12 khu phố 2,
                                 phường Phú Tân, TP.Bến Tre
-                            </p>
+                            </p> */}
                             <p>
                                 <strong>Hotline: </strong>
-                                <a href="tel:0989166612">0989.166.612</a>–{' '}
-                                <a href="tel:0946544904">0946.544.904</a>
+                                <a href="">0989.401.800</a> –{' '}
+                                <a href="">0394.682.913</a> –{' '}
+                                <a href="">0367.764.624</a>{' '}
                             </p>
 
                             <p>
                                 <strong>Email: </strong>
-                                <a href="mailto:giacongunila@gmail.com">
-                                    giacongunila@gmail.com
-                                </a>
+                                <a href="">haroldgroupcos@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -59,7 +58,7 @@ const ContactPage = () => {
                                         variant="outline"
                                         endIcon={<SendIcon />}
                                     >
-                                        Send
+                                        Gửi
                                     </Button>
                                 </div>
                             </div>
@@ -68,7 +67,7 @@ const ContactPage = () => {
                 </div>
             </section>
 
-            <div className='location'>
+            <div className="location">
                 <GoogleMap />
             </div>
         </>

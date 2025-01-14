@@ -39,34 +39,15 @@ const DetailProductPage = () => {
                             <br />
                             {product?.desc1 ? <p>{product.desc1}</p> : <></>}
                             {product?.desc2 ? <p>{product.desc2}</p> : <></>}
-                            <p>
-                                <strong>Thành phần hoạt chất chính:</strong> Dầu
-                                (Olive, Jojoba), và Dimer dilinoleyl dimer
-                                dilinoleate,
-                                Phytosteryl/Isostearyl/Cetyl/Stearyl/Behenyl
-                                Dimer Dilinoleate.
-                            </p>
+
+                            <br />
+
                             <br />
                             <p>
-                                <strong>Công dụng: </strong>
-                                {/* <a href="https://unila.com.vn/san-pham-son-duong-moi-unila/">
-                                    Serum dưỡng môi UNILA
-                                </a>{' '} */}
-                                được xem là người bạn đồng hành đắc lực không
-                                thể thiếu cho phái đẹp. Bảng thành phần lành
-                                tính chủ yếu là những chiết xuất từ thiên nhiên,
-                                mang đến công dụng: Hỗ trợ làm mềm lớp biểu bì
-                                của môi, hỗ trợ làm lành vết nứt nẻ trên môi,
-                                Nuôi dưỡng và cung cấp ẩm cho đôi môi, tạo hiệu
-                                ứng đôi môi hồng hào “mọng nước” và bảo vệ môi
-                                khỏi tác hại của môi trường
-                            </p>
-                            <br />
-                            <p>
-                                <strong>Xuất xứ:</strong> Công ty TNHH UNILA
+                                <strong>Xuất xứ:</strong> Công ty TNHH HAROLD
                             </p>
                         </div>
-                        <div className="btn-buy">
+                        {/* <div className="btn-buy">
                             <button class="btn">
                                 <svg
                                     width="180px"
@@ -91,7 +72,7 @@ const DetailProductPage = () => {
                                     <span>Mua Ngay</span>
                                 </a>
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
