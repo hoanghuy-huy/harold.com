@@ -8,7 +8,7 @@ const slides = [
         // title: '워터 슬리핑 마스크 EX',
         desc1: 'I LIKED YOU AT FIRST SIGHT',
         desc2: 'LOOK DEEP INTO YOUR SOUL AND FEEL',
-        img2: '/images/product-8.png',
+        img2: '/Images/product-8.png',
         img1: '/Images/gai-han.png',
         background: '#ededed',
         numberProduct: 'LOOK',
@@ -22,7 +22,7 @@ const slides = [
         desc2: 'LOVING YOURSELF IS THE MOST WONDERFUL THING',
         img1: '/Images/gai-tay.png',
 
-        img2: '/images/product-9.png',
+        img2: '/Images/product-9.png',
 
         numberProduct: 'YOUR',
         titleLeft1: 'YOUR STYLE',
@@ -34,7 +34,7 @@ const slides = [
         desc1: 'BEAUTY WILL ALWAYS BE PRESENT',
         desc2: 'AND SHINE IN YOUR OWN WAY',
         img1: '/Images/gai-xinh.png',
-        img2: '/images/product-10.png',
+        img2: '/Images/product-10.png',
 
         numberProduct: 'BEAUTY',
         titleLeft1: 'BEAUTY ',

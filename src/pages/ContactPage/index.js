@@ -23,9 +23,7 @@ const ContactPage = () => {
                             </p> */}
                             <p>
                                 <strong>Hotline: </strong>
-                                <a href="">0989.401.800</a> –{' '}
-                                <a href="">0394.682.913</a> –{' '}
-                                <a href="">0367.764.624</a>{' '}
+                                <a href="">0989.401.800</a>
                             </p>
 
                             <p>
